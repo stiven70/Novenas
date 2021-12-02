@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* .ensayo {
+      background: url(../img/banner_p2\ \(1\).png) no-repeat;
+      position: relative;
+      margin: 0;
+      width: 100%;
+      padding: 10% 13%;
+      background-size: 100%;
+    } */
+
+
+header  {
+  background: url('../img/Banner2.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 15px 0;
+}
+
+.header-content .boton-saludos {
+  display: none;
+}
+
+.wrapper {
+  width: 85%;
+  margin: auto;
+}
+
+.principal {
+  background-image: url("../img/fondo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 30px;
+}
+
+.principal2 {
+  /* background-image: url("../img/fondo.png"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.video {
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.video::after {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.esdacode-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container_botones {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+.botones {
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #af1414;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: white;
+  border: 1px solid #af1414;
+}
+
+a:hover {
+  color: white;
+  background-color: #960303;
+}
+
+.tabs {
+  clear: both;
+  display: flex;
+  max-width: 650px;
+  margin: 0 auto;
+  /* you can either manually set a min-height here or do it via JS ---> */
+}
+
+.tab {
+  float: left;
+}
+
+.tab label {
+  margin-right: 20px;
+  position: relative;
+  top: 0;
+  cursor: pointer;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.tab [type="radio"] {
+  display: none;
+}
+
+.tab__content {
+  position: relative;
+  top: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity 0.2s cubic-bezier(0.42, 0, 0.34, 1.01);
+  opacity: 0;
+}
+
+[type="radio"]:checked ~ label {
+  border-bottom: 2px solid #1d1d1d;
+  color: #1d1d1d;
+  z-index: 2;
+}
+
+[type="radio"]:checked ~ label ~ .tab__content {
+  z-index: 1;
+  opacity: 1;
+}
+
+h2 {
+  color: #000;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.warpper2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tab {
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 0px 2px;
+  background: #960303;
+  display: inline-block;
+  color: #fff;
+  border-radius: 3px 3px 0px 0px;
+  box-shadow: 0 0.5rem 0.8rem #960303;
+}
+.panels {
+  background: #fffffff6;
+  box-shadow: 0 2rem 2rem #00000080;
+  min-height: 200px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 3px;
+  overflow: hidden;
+  padding: 20px;
+}
+.panel {
+  display: none;
+  animation: fadein 0.8s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.panel-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.radio {
+  display: none;
+}
+#uno:checked ~ .panels #uno-panel,
+#dos:checked ~ .panels #dos-panel,
+#tres:checked ~ .panels #tres-panel,
+#cuatro:checked ~ .panels #cuatro-panel,
+#cinco:checked ~ .panels #cinco-panel,
+#seis:checked ~ .panels #seis-panel,
+#siete:checked ~ .panels #siete-panel,
+#ocho:checked ~ .panels #ocho-panel,
+#nueve:checked ~ .panels #nueve-panel {
+  display: block;
+}
+#uno:checked ~ .tabs #uno-tab,
+#dos:checked ~ .tabs #dos-tab,
+#tres:checked ~ .tabs #tres-tab,
+#cuatro:checked ~ .tabs #cuatro-tab,
+#cinco:checked ~ .tabs #cinco-tab,
+#seis:checked ~ .tabs #seis-tab,
+#siete:checked ~ .tabs #siete-tab,
+#ocho:checked ~ .tabs #ocho-tab,
+#nueve:checked ~ .tabs #nueve-tab {
+  background: #fffffff6;
+  color: #000;
+  border-top: 3px solid #960303;
+}
+
+footer {
+  background: #7c0505;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+
+  header  {
+  padding: 28px 0;
+}
+
+  .container_botones {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 18px;
+  }
+
+  .botones {
+    margin-bottom: 0px;
+  }
+
+  .tab {
+    padding: 5px 24px;
+  }
+
+  .boton2-saludos {
+    display: none;
+  }
+
+  .botones a {
+    padding: 5px 50px ;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  header  {
+    padding: 30px 0;
+}
+
+.tab {
+    padding: 5px 30px;
+}
+
+.panels {
+    max-width: 680px;
+}
+
+.video {
+    width: 80%;
+}
+
+}
+
+@media screen and (min-width: 1440px) {
+
+  header  {
+    padding: 40px 0;
+}
+
+.video {
+    width: 80%;
+}
+
+}
+
+@media screen and (min-width: 2560px) {
+
+  header  {
+    padding: 55px 0;
+}
+
+.video {
+    width: 80%;
+}
+
+}
