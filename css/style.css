@@ -220,9 +220,8 @@ footer {
   background: #a50000;
   color: white;
   text-align: center;
-  padding: 20px 0;
-  margin-top: 30px;
-  width: 100%;
+  padding: 0px 12px 23px;
+
 }
 
 @media screen and (min-width: 768px) {
