@@ -2,6 +2,11 @@
   margin: 0;
 }
 
+html{
+  background: radial-gradient(ellipse at center, #d35448 0%,#4a110c 100%);
+}
+
+
 body {
   font-family: "Roboto Condensed", sans-serif;
   background-image: url("../img/fondo1.png");
@@ -24,7 +29,7 @@ header {
 .principal {
   background-image: url("../img/fondo1.png");
   background-size: 5%;
-  padding: 25px 0;
+  padding: 120px 0;
 }
 
 .principal2 {
@@ -56,12 +61,21 @@ header {
   width: 100%;
 }
 
-.botones {
+.botones{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.botones a {
+  margin: 10px;
+}
+
+/* .botones {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin-top: 20px;
-}
+} */
 
 a {
   text-decoration: none;
@@ -218,7 +232,7 @@ a:hover {
 }
 
 footer {
-  background: #a50000;
+  background-color: rgba(10, 10, 10, 0.3);
   color: white;
   text-align: center;
   padding: 15px 0 15px;
