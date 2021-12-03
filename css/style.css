@@ -4,6 +4,8 @@
 
 body {
   font-family: "Roboto Condensed", sans-serif;
+  background-image: url("../img/fondo1.png");
+  background-size: 5%;
 }
 
 header {
@@ -20,7 +22,7 @@ header {
 
 .principal {
   background-image: url("../img/fondo1.png");
-  background-size: 15%;
+  background-size: 5%;
   padding: 25px 0;
 }
 
@@ -75,7 +77,7 @@ a {
 
 a:hover {
   color: white;
-  background-color: #960303;
+  background-color: #a50000;
 }
 
 .tabs {
@@ -128,11 +130,11 @@ a:hover {
   text-align: center;
   font-family: Arial Black;
   font-weight: bold;
-  color: #960303;
+  color: #a50000;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   margin: 20px;
   padding: 8px;
-  border: 1px solid #960303;
+  border: 1px solid #a50000;
 }
 
 .warpper2 {
@@ -145,11 +147,11 @@ a:hover {
   cursor: pointer;
   padding: 4px 18px;
   /* margin: 0px 2px; */
-  background: #960303;
+  background: #a50000;
   display: inline-block;
   color: #fff;
   /* border-radius: 3px 3px 0px 0px; */
-  box-shadow: 0 0.5rem 0.8rem #960303;
+  box-shadow: 0 0.5rem 0.8rem #a50000;
 }
 
 .panels {
@@ -203,7 +205,7 @@ a:hover {
 #nueve:checked ~ .tabs #nueve-tab {
   background: #fffffff6;
   color: #000;
-  border-top: 3px solid #960303;
+  border-top: 3px solid #a50000;
 }
 
 .visibilidad-off {
@@ -215,11 +217,14 @@ a:hover {
 }
 
 footer {
-  background: #7c0505;
+  background: #a50000;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 20px 0;
   margin-top: 30px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -233,6 +238,7 @@ footer {
     justify-content: space-evenly;
     font-size: 18px;
     margin-bottom: 0px;
+    margin-top: 40px;
   }
 
   .tab {
@@ -280,26 +286,31 @@ footer {
 
 @media screen and (min-width: 1440px) {
   header {
-    padding: 10px 0;
+    padding: 0;
+    height: 70px;
   }
+.botones {
+    margin-top: 35px;
+}
+
+
 
   .video {
     width: 65%;
   }
   .container_botones a {
-    padding: 13px 70px;
-    font-size: 25px;
+    padding: 8px 70px;
   }
   .tabs {
-    max-width: 1620px;
+    max-width: 1400px;
   }
 
   .tab {
-    padding: 10px 85px;
+    padding: 10px 70px;
   }
 
   .panels {
-    max-width: 1600px;
+    max-width: 1320px;
   }
 }
 
