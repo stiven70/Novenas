@@ -27,9 +27,7 @@ header {
 }
 
 .principal {
-  background-image: url("../img/fondo1.png");
-  background-size: 5%;
-  padding: 120px 0;
+  padding: 130px 0;
 }
 
 .principal2 {
@@ -235,12 +233,17 @@ footer {
   background-color: rgba(10, 10, 10, 0.3);
   color: white;
   text-align: center;
-  padding: 15px 0 15px;
+  padding: 15px 15px;
   position: relative;
   bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
+
+  .principal {
+    padding: 45px 0;
+}
+
   .container_botones {
     width: 100%;
   }
@@ -270,8 +273,13 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+
+  .principal {
+    padding: 17px 0;
+}
+
   header {
-    padding: 30px 0;
+    padding: 0;
   }
 
   .tab {
@@ -283,7 +291,7 @@ footer {
   }
 
   .video {
-    width: 95%;
+    width: 90%;
   }
   .tab {
     padding: 5px 30px;
@@ -298,15 +306,18 @@ footer {
 }
 
 @media screen and (min-width: 1440px) {
-  header {
-    padding: 0;
-    height: 70px;
-  }
-.botones {
-    margin-top: 35px;
+
+  .principal {
+    padding: 12px 0;
 }
 
-
+    header {
+      padding: 0;
+      height: 70px;
+    }
+  .botones {
+      margin-top: 35px;
+  }
 
   .video {
     width: 65%;
