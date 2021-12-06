@@ -4,8 +4,20 @@
 
 html{
   background: radial-gradient(ellipse at center, #d35448 0%,#4a110c 100%);
+
 }
 
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../img/merry.gif') 50% 50% no-repeat #bd302d;
+    background-size: 100%;
+    /* opacity: .9; */
+}
 
 body {
   font-family: "Roboto Condensed", sans-serif;
@@ -27,7 +39,7 @@ header {
 }
 
 .principal {
-  padding: 175px 0;
+  padding: 10px 0;
 }
 
 .principal2 {
@@ -68,12 +80,9 @@ header {
   margin: 10px;
 }
 
-/* .botones {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-top: 20px;
-} */
+.chat {
+  display: none !important;
+}
 
 a {
   text-decoration: none;
@@ -144,10 +153,9 @@ a:hover {
   font-family: Arial Black;
   font-weight: bold;
   color: #a50000;
-  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-  margin: 20px;
+  text-shadow: -2px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  margin: 15px;
   padding: 8px;
-  border: 1px solid #a50000;
 }
 
 .warpper2 {
@@ -158,21 +166,21 @@ a:hover {
 
 .tab {
   cursor: pointer;
-  padding: 4px 18px;
+  padding: 4px 15px;
   /* margin: 0px 2px; */
-  background: #a50000;
+  background: #6f231c;
   display: inline-block;
   color: #fff;
   /* border-radius: 3px 3px 0px 0px; */
-  box-shadow: 0 0.5rem 0.8rem #a50000;
+  box-shadow: 0 0.5rem 0.8rem #6f231c;
 }
 
 .panels {
   background: #fffffff6;
   box-shadow: 0 2rem 2rem #00000080;
-  min-height: 200px;
+  /* min-height: 200px; */
   width: 100%;
-  max-width: 365px;
+  max-width: 310px;
   border-radius: 3px;
   overflow: hidden;
   padding: 20px;
@@ -230,18 +238,30 @@ a:hover {
 }
 
 footer {
-  background-color: rgb(10 10 10 / 9%);;
+  background-color: rgb(10 10 10 / 9%);
+  background-image: url('../img/banner-footer.png');
+  background-size: cover;
+  background-position: center;
   color: white;
   text-align: center;
   padding: 10px 0;
   width: 100%;
   font-weight: 700;
+  margin-top: 20px;
+}
+
+footer h4 {
+  padding: 0 12px 25px;
 }
 
 @media screen and (min-width: 768px) {
 
+  .loader {
+    background-size: 80%;
+}
+
   .principal {
-    padding: 85px 0;
+    padding: 15px 0;
 }
 
   .container_botones {
@@ -274,6 +294,10 @@ footer {
 
 @media screen and (min-width: 1024px) {
 
+    .loader {
+    background-size: 60%;
+}
+
   .principal {
     padding: 30px 0;
 }
@@ -303,12 +327,19 @@ footer {
     display: flex;
     justify-content: center;
   }
+  .chat {
+    display: block !important;
+  }
 }
 
 @media screen and (min-width: 1440px) {
 
+    .loader {
+    background-size: 50%;
+}
+
   .principal {
-    padding: 25px 0;
+    padding: 25px 0 0;
 }
 
     header {
