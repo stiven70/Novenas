@@ -6,10 +6,6 @@ html{
   background: radial-gradient(ellipse at center, #d35448 0%,#4a110c 100%);
 }
 
-#flake {
- z-index: 1;
-}
-
 .loader {
     position: fixed;
     left: 0px;
@@ -53,7 +49,6 @@ header {
   width: 95%;
   position: relative;
   margin: 0 auto;
-  z-index: 2;
 }
 
 .video::after {
@@ -170,21 +165,28 @@ a:hover {
 
 .tab {
   cursor: pointer;
-  padding: 4px 4px;
+  padding: 4px 2px;
   /* margin: 0px 2px; */
   background: #6f231c;
   display: inline-block;
   color: #fff;
   border-radius: 5px 5px 0px 0px;
   font-size: 15px;
+  box-shadow:
+		inset 1px 1px 0px rgba(255,255,255,0.25), /* highlight */
+		inset 0 0 6px #a23227, /* inner glow */
+		inset 0 80px 80px -40px #ac3223, /* gradient */
+		1px 1px 3px rgba(0,0,0,0.75); /* shadow */
 }
 
 .panels {
-  background: #fffffff6;
+  background-image: url('../img/e.jpg');
+  background-repeat: round;
+  background-size: cover;
   box-shadow: 0 2rem 2rem #00000080;
   /* min-height: 200px; */
   width: 100%;
-  max-width: 310px;
+  max-width: 270px;
   border-radius: 3px;
   overflow: hidden;
   padding: 20px;
@@ -229,8 +231,14 @@ a:hover {
 #ocho:checked ~ .tabs #ocho-tab,
 #nueve:checked ~ .tabs #nueve-tab {
   background: #fffffff6;
-  color: #000;
+  box-shadow:
+		inset 1px 1px 0px rgba(255,255,255,0.25), /* highlight */
+		inset 0 0 6px white, /* inner glow */
+		inset 0 80px 80px -40px white, /* gradient */
+		1px 1px 3px rgba(0,0,0,0.75); /* shadow */
+  color: #a50000;
   border-top: 3px solid #a50000;
+  font-weight:600;
 }
 
 .visibilidad-off {
@@ -258,6 +266,18 @@ footer h4 {
   padding: 0 12px 25px;
 }
 
+@media screen and (min-width: 375px) {
+
+  .tab {
+    padding: 4px 4px;
+    margin: 0 1px;
+  }
+
+  .panels {
+    max-width: 320px;
+  }
+}
+
 @media screen and (min-width: 768px) {
 
   .loader {
@@ -281,13 +301,10 @@ footer h4 {
     margin-top: 40px;
   }
 
-  .tab {
-    padding: 5px 24px;
-  }
-
   .container_botones a {
     padding: 5px 20px;
   }
+
   .tab {
     padding: 5px 20px;
   }
@@ -327,8 +344,9 @@ footer h4 {
     width: 90%;
   }
   .tab {
-    padding: 5px 32px;
+    padding: 5px 28px;
     font-size: 16px;
+    margin: 0 3px;
   }
   .panels {
     max-width: 855px;
@@ -371,7 +389,7 @@ footer h4 {
   }
 
   .tab {
-    padding: 10px 58px;
+    padding: 10px 55px;
     font-size: 17px;
   }
 
