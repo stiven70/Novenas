@@ -241,13 +241,12 @@ a:hover {
   font-weight:600;
 }
 
-.visibilidad-off {
-  display: none;
+.contador img {
+  width: 52px;
+  padding: 0px 10px;
 }
 
-.visibilidad-on {
-  display: block;
-}
+
 
 footer {
   background-color: rgb(10 10 10 / 9%);
